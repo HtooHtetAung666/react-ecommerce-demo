@@ -12,8 +12,8 @@ export const Cart = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='p-8 lg:p-20'>
-      <h1 className='text-center text-3xl font-bold text-white mt-6'>Cart Items</h1>
+    <div className='w-full min-h-screen p-8 lg:p-20 lg:max-w-7xl lg:mx-auto'>
+      <h1 className='text-center text-3xl font-bold text-slate-800 mt-6'>Cart Items</h1>
       {
         totalAmount > 0 ?
         <div>
@@ -24,20 +24,20 @@ export const Cart = () => {
               }
             })}
           </div>
-          <p className='text-center text-white text-lg'>Total Amount ${totalAmount}</p>
-          <div className='mt-5 flex items-center justify-center text-white'>
+          <p className='text-center text-slate-800 text-lg'>Total Amount ${totalAmount}</p>
+          <div className='mt-5 flex items-center justify-center text-slate-800'>
             <div className='space-x-4'>
               <button 
                 onClick={()=>navigate("/")}
-                className='bg-fuchsia-400 p-2 rounded-xl hover:bg-fuchsia-300'
+                className='bg-blue-400 p-2 rounded-xl text-white hover:bg-blue-300'
               >
                 Continue Shopping
               </button>
-              <button className='bg-fuchsia-400 p-2 rounded-xl hover:bg-fuchsia-300'>Checkout</button>
+              <button className='bg-blue-400 p-2 rounded-xl text-white hover:bg-indigo-300'>Checkout</button>
             </div>
           </div>  
         </div>
-        : <h1 className='mt-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-300 to-fuchsia-200 text-lg'>Your Cart is empty</h1>
+        : <h1 className='mt-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-600 text-lg'>Your Cart is empty</h1>
       }
     </div>
   )

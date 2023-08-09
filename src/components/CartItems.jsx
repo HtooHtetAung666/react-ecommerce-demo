@@ -16,13 +16,13 @@ export const CartItems = (props) => {
                 />
                 <div className="sm:ml-4 sm:flex sm:w-full sm:justify-between">
                     <div className="mt-5 sm:mt-0">
-                        <h2 className="text-lg font-bold text-white">{productName}</h2>
-                        <p className="mt-1 text-xs text-white">${price}</p>
+                        <h2 className="text-lg font-bold text-slate-800">{productName}</h2>
+                        <p className="mt-1 text-xs text-slate-800">${price}</p>
                     </div>
                     <div className="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
-                        <div className="flex items-center border-gray-100">
+                        <div className="flex items-center border-indigo-100">
                             <span 
-                                className="cursor-pointer rounded-l bg-fuchsia-400 hover:bg-fuchsia-300 py-1 px-3.5 duration-100 text-white"
+                                className="cursor-pointer rounded-l bg-blue-400 hover:bg-blue-300 py-1 px-3.5 duration-100 text-white"
                                 onClick={()=>removeFromCart(id)}
                             > 
                                 - 
@@ -33,7 +33,7 @@ export const CartItems = (props) => {
                                 onChange={(e)=>updateCartItem(Number(e.target.value), id)} 
                             />
                             <span 
-                                className="cursor-pointer rounded-r bg-fuchsia-400 hover:bg-fuchsia-300 py-1 px-3 duration-100 text-white"
+                                className="cursor-pointer rounded-r bg-blue-400 hover:bg-blue-300 py-1 px-3 duration-100 text-white"
                                 onClick={()=>addToCart(id)}
                             > 
                                 + 
