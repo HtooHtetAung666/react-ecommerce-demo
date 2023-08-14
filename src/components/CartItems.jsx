@@ -13,6 +13,7 @@ export const CartItems = (props) => {
                 <img 
                     src={image} 
                     className="w-full rounded-lg sm:w-40" 
+                    alt='products'
                 />
                 <div className="sm:ml-4 sm:flex sm:w-full sm:justify-between">
                     <div className="mt-5 sm:mt-0">
